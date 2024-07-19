@@ -1,0 +1,177 @@
+{
+  "name": "RugNinja",
+  "desc": "",
+  "methods": [
+    {
+      "name": "MANAGER_config",
+      "args": [
+        {
+          "name": "manager",
+          "type": "address"
+        },
+        {
+          "name": "tinymanApp",
+          "type": "uint64"
+        },
+        {
+          "name": "bonfireApp",
+          "type": "uint64"
+        },
+        {
+          "name": "vrfApp",
+          "type": "uint64"
+        },
+        {
+          "name": "deploymentFee",
+          "type": "uint64"
+        },
+        {
+          "name": "swapFee",
+          "type": "uint64"
+        },
+        {
+          "name": "lockupMin",
+          "type": "uint64"
+        },
+        {
+          "name": "lockupRange",
+          "type": "uint64"
+        },
+        {
+          "name": "targetReserves",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "MANAGER_claimEarnings",
+      "args": [],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "createCoin",
+      "args": [
+        {
+          "name": "name",
+          "type": "byte[]"
+        },
+        {
+          "name": "ticker",
+          "type": "byte[]"
+        },
+        {
+          "name": "supply",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "buyCoin",
+      "args": [
+        {
+          "name": "assetId",
+          "type": "uint64"
+        },
+        {
+          "name": "minOut",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "sellCoin",
+      "args": [
+        {
+          "name": "asset",
+          "type": "uint64"
+        },
+        {
+          "name": "amountIn",
+          "type": "uint64"
+        },
+        {
+          "name": "minOut",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "retryCoinVRF",
+      "args": [
+        {
+          "name": "asset",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "deployCoin",
+      "args": [
+        {
+          "name": "asset",
+          "type": "uint64"
+        },
+        {
+          "name": "poolAddress",
+          "type": "address"
+        },
+        {
+          "name": "poolToken",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "claimCoin",
+      "args": [
+        {
+          "name": "asset",
+          "type": "uint64"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    },
+    {
+      "name": "tipCoin",
+      "args": [
+        {
+          "name": "asset",
+          "type": "uint64"
+        },
+        {
+          "name": "amount",
+          "type": "uint64"
+        },
+        {
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      }
+    }
+  ]
+}
