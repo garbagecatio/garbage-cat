@@ -10,12 +10,13 @@ import (
 	"log"
 	"os"
 	"os/signal"
-	watcher "rug-ninja-sniper/internal/algod"
-	"rug-ninja-sniper/internal/config"
-	"rug-ninja-sniper/store"
 	"strings"
 	"syscall"
 	"time"
+
+	watcher "github.com/garbagecatio/rug-ninja-sniper/internal/algod"
+	"github.com/garbagecatio/rug-ninja-sniper/internal/config"
+	"github.com/garbagecatio/rug-ninja-sniper/store"
 
 	"github.com/algorand/go-algorand-sdk/v2/abi"
 	"github.com/algorand/go-algorand-sdk/v2/client/v2/algod"
