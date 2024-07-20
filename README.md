@@ -28,6 +28,6 @@ The first time you run the garbage cat server it will generate a new Algorand ac
 > <b>he's a cat.</b><br><br>
 > You as the operator of this free, open source software are solely responsible for keeping your new account safe & backing up your mnemonics.
 
-![First Prompts]('assets/start_preview.png')
+![First Prompts](assets/start_preview.png)
 
 Fund the account with some Algo & whenever it detects a new rug ninja token mint, it will instantly purchase the amount you set when you started the server.
