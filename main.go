@@ -57,6 +57,10 @@ func main() {
 
 	flag.Parse()
 
+	fmt.Println("")
+	fmt.Printf("Purchasing: %v Algo worth of every new token", color.YellowString("%v", purchaseAmount/100_000))
+	fmt.Println("")
+
 	setup()
 
 	var ctx context.Context
