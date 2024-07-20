@@ -1,8 +1,11 @@
 # Garbage Cat
-A go based rug ninja mint sniper.
+
+The Blazing Fast Rug Ninja Sniper
+
+![Garbage Cat](assets/gcat.webp)
 
 ## Getting Started
-This is a mint sniper bot for [Rug.Ninja](https://rug.ninja). It creates a new hot wallet and will purchase any newly minted tokens in the amount you set ( defaults to 1 algo )
+This is a mint sniper bot for [Rug.Ninja](https://rug.ninja).<br>It creates a new hot wallet and will purchase any newly minted tokens in the amount you set ( defaults to 1 algo )
 
 
 ### Prerequisites
