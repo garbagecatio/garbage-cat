@@ -297,6 +297,13 @@ func createBoxName(address types.Address, value uint64) []byte {
 	return result
 }
 
+func createTBoxName(address types.Address) []byte {
+	result := make([]byte, 33)
+	copy(result[:1], []byte("t"))
+	copy(result[1:], address[:])
+	return result
+}
+
 func buyToken(assetName string, assetID uint64, amount uint64) error {
 	txParams, err = Algod.SuggestedParams().Do(context.Background())
 	if err != nil {
@@ -336,6 +343,10 @@ func buyToken(assetName string, assetID uint64, amount uint64) error {
 			{
 				AppID: RugNinjaMainNetAppID,
 				Name:  createBoxName(account.Address, assetID),
+			},
+			{
+				AppID: RugNinjaMainNetAppID,
+				Name:  createTBoxName(account.Address),
 			},
 		},
 	}
